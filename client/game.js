@@ -1,3 +1,5 @@
+const loaded_map = "world ";
+
 const ctx = canvas.getContext("2d");
 
 function resize() {
@@ -7,7 +9,7 @@ function resize() {
 window.addEventListener("resize", resize);
 resize();
 
-generateMapFromImage("assets/world.png", () => {
+generateMapFromImage(`assets/${loaded_map}.png`, () => {
     console.log("🎮 Démarrage du jeu");
     
     // Centrer la caméra pour voir toute la carte
